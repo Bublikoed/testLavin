@@ -50,6 +50,7 @@ body {
 }
 
 body {
+	overflow-x: hidden;
 	font-family: $primary-f;
 	color: $primary-c;
 	display: flex;
@@ -90,7 +91,57 @@ h4 {
 
 
 .simple-title {
+	font-family: $secondary-f;
+	font-size: 8.4rem;
+	line-height: 8.9rem;
+	letter-spacing: -0.04em;
+	font-weight: 700;
+	color: #181E4B;
+	margin-bottom: 3rem;
+	overflow: hidden;
+	@media screen and (max-width:$large_tablet) {
+        font-size: 5.4rem;
+		line-height: 5.9rem;
+    }
 	@media screen and (max-width:$large_tablet) {}
+	.underline {
+		position: relative;
+		display: inline-block;
+		span {
+			position: relative;
+			z-index: 1;
+		}
+		img {
+			position: absolute;
+			bottom: 1rem;
+			left: 6rem;
+			z-index: 0;
+			width: 100%;
+			transform: scale(1.8);
+			@media screen and (max-width:$large_tablet) {
+				left: 5rem;
+			
+			}
+		}
+		// &::before {
+		// 	content: url('~img/svg/underline.svg');
+		// 	position: absolute;
+		// 	bottom: -2rem;
+		// 	left: 0;
+		// 	width: 38rem;
+		// 	height: 100%;
+		// 	z-index: -1;
+		// }
+	}
+}
+
+.secondary-title {
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 3rem;
+	text-transform: uppercase;
+	margin-bottom: 2.4rem;
+	color: $secondary-c;
 }
 
 .desktop--hide {

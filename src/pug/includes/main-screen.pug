@@ -1,8 +1,21 @@
 section.main-screen#main-screen
-    .center-wrap
-        h1.main-screen__title
-
-        h2.main-screen__subtitle
-
-        .main-screen__btn
-            .btn
+  .center-wrap
+    .main-screen__wrap 
+      .main-screen__left.wow.bounceInLeft(data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="1")
+        .secondary-title
+          |Best Destinations around the world
+        .simple-title 
+          |Travel, <div class='underline'><span>enjoy</span><img src='assets/images/svg/underline.svg'/></div> and live a new and full life
+        p Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.
+        .main-screen__btns 
+          a(href="#").btn.btn--yellow Find out more 
+          a(href="#").btn__demo.wow.flipInX(data-wow-duration="1s" data-wow-delay="2s" data-wow-offset="10" data-wow-iteration="1")
+            span.btn__demo-play 
+              <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 6.5L0.749999 12.9952L0.75 0.00480889L12 6.5Z" fill="white"/>
+              </svg>
+            |Play Demo
+      .main-screen__right 
+        .img-wrap.wow.bounceInRight(data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="1") 
+          div
+            img(src="assets/images/png/women.png" alt="")

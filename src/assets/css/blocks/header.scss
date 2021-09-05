@@ -22,11 +22,13 @@
 
 	&--fixed {
 		position: fixed;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 		opacity: 1;
 		width: 100%;
 		top: 0px;
 		left: 0px;
-		background: #ffffff;
+		background: #FFF1DA;
 		box-shadow: 0px 1px 36px 13px rgba(21, 21, 21, 0.03);
 		overflow: hidden;
 		transform: translate(0, -100%);
@@ -68,25 +70,36 @@
 		}
 	}
 
-	&__logo {}
+	&__logo {
+		max-width: 11.2rem;
+	}
 
 	&__nav {
+		display: flex;
+		align-items: center;
 		&-list {
 			display: flex;
 			align-items: center;
+			margin-right: 4.8rem;
 		}
 
 		&-item {
-			margin-right: 2.5rem;
+			margin-left: 6rem;
 
 			&:last-child {
-				margin-right: 0px;
+				margin-left: 8rem;
 			}
+		}
+		.btn {
+			margin-right: 4rem;
 		}
 
 		&-link {
 			position: relative;
-
+			font-weight: 500;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			transition: all 0.5s;
 			&::before {
 				content: "";
 				position: absolute;
@@ -98,9 +111,13 @@
 				transform: scaleX(0);
 				transition: transform .5s;
 			}
+			&:hover {
+				color: $secondary-c;
+			}
 
 			&:hover::before {
 				transform: scaleX(1);
+				background: $secondary-c;
 			}
 		}
 	}
@@ -111,7 +128,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		width: 23px;
+		width: 30px;
 		padding: 5px;
 		cursor: pointer;
 

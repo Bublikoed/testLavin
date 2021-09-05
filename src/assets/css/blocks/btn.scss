@@ -2,13 +2,41 @@
 	border: none;
 	cursor: pointer;
 	text-decoration: none;
-	line-height: 5.5rem;
+	// line-height: 4rem;
 	display: inline-block;
 	white-space: nowrap;
 	text-align: center;
-	background: #FBFBFB;
+	background: transparent;
 	border-radius: 1px;
-	font-weight: bold;
-	padding: 0 5rem;
+	font-weight: 500;
+	padding: 0.8rem 1.8rem;
 	transition: all 0.5s;
+	border: 1px solid $primary-c;
+	border-radius: 5px;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	&:hover {
+		color: $secondary-c;
+		border-color: $secondary-c;
+	}
+	&--yellow {
+		background: #F1A501;
+		border-color: #F1A501;
+		box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+		border-radius: 10px;
+		color: #FFFFFF;
+		&:hover {
+			background: transparent;
+		}
+	}
+	&--orange {
+		background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+		border: none;
+		color: #FFFFFF;
+		border-radius: 10px;
+		&:hover {
+			color: #fff;
+			box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+		}
+	}
 }

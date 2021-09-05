@@ -1,0 +1,12 @@
+section.form#form
+  .center-wrap
+    .form__wrap.wow.bounceInUp(data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="100" data-wow-iteration="1")
+      .form__title Subscribe to get information, latest news and other interesting offers about Cobham
+      a(href="#").form__link.wow.rollIn(data-wow-duration="1s" data-wow-delay="2s" data-wow-offset="200" data-wow-iteration="1") 
+        img(src='assets/images/svg/icon-telegram.svg' alt='')
+      form.inputs(action='' autocomplete="off")
+        .inputs__field-wrap
+          input.inputs__field(type='text' id='text' name='text' autocomplete='off' required='' minlength='2' placeholder='Your email')
+        .inputs__btn
+          button.btn.btn--orange(type='submit' id='button')
+            |Subscribe

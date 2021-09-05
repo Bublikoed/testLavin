@@ -1,1 +1,107 @@
-.main-screen {}
+.main-screen {
+    padding-top: 15rem;
+    // padding-bottom: 5rem;
+    background-image: url('~img/svg/bg-main-block.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size:  50% 100%;
+    @media screen and (min-width:$large_desktop) {
+        background-position: top right -10%;   
+    }
+    @media screen and (max-width:$large_tablet) {
+        padding-top: 10rem;
+        background-size: auto 100%;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        background: #D5AEE4;
+        opacity: 1;
+        filter: blur(150px);
+        width: 47rem;
+        height: 47rem;
+        border-radius: 50%;
+        top: 0rem;
+        left: -52rem;
+        z-index: -1;
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+    &__left {
+        width: 50%;
+        max-width: 55rem;
+        flex-shrink: 0;
+        @media screen and (max-width:$large_tablet) {
+            width: 100%;
+        }
+        p {
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 3.0rem;
+            color: #5E6282;
+            margin-bottom: 3.4rem;
+        }
+    }
+    &__right {
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width:$large_tablet) {
+            display: none;
+        }
+        width: 100%;
+        .img-wrap {
+            max-width: 74rem;
+        }
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        .btn--yellow {
+            font-size: 1.7rem;
+            line-height: 2.5rem;
+            margin-right: 4.4rem;
+            padding: 1.7rem 2.6rem;
+
+            @media screen and (max-width:$large_tablet) {
+                margin-right: 2.4rem;
+            }
+        }
+        .btn__demo {
+            display: flex;
+            align-items: center;
+            &-play {
+                height: 5.2rem;
+                width: 5.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                background: $secondary-c;
+                border: 1px solid $secondary-c;
+                box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+                border-radius: 50%;
+                margin-right: 2.1rem;
+                transition: all 0.5s;
+                @media screen and (max-width:$large_tablet) {
+                   
+                }
+                svg {
+                    path {
+                        transition: all 0.5s;  
+                    }
+                }
+            }
+            &:hover .btn__demo-play {
+                background: transparent;
+                margin-right: 1.8rem;
+                svg {
+                    path {
+                        fill: $secondary-c;
+                    }
+                }
+            }
+        }
+    }
+}
