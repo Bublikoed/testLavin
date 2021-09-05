@@ -19,6 +19,7 @@ import './assets/css/blocks/form.scss';
 
 
 // JS
+// import './assets/js/wow';
 import './assets/js/popup';
 import './assets/js/inputs';
 import './assets/js/header';
